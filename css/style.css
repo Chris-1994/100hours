@@ -2,6 +2,10 @@
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
 }
+
+p {
+  font-family: "Times new Roman" !important;
+}
 /*
 #bg-color-jm1,
 #bg-color-jm2 {

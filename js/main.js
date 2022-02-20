@@ -34,6 +34,6 @@ function updateRecordWithbarcode(barcode);
     })
 
 const r = createBarcode()
-if (barcodeList.includes( r === true) {
+if (barcodeList.includes(r) === true) {
     console.log("hello")
 }
