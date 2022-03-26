@@ -37,3 +37,19 @@ const r = createBarcode()
 if (barcodeList.includes(r) === true) {
     console.log("hello")
 }
+
+
+
+<script>
+	var ADT = ADT || {};
+	ADT.Tag = ADT.Tag || {};
+	ADT.Tag.t = 3;
+	ADT.Tag.c = "NOK";
+	ADT.Tag.tp = 1603666487;
+	ADT.Tag.am = "{{order.subtotal_price | times: 0.75 | money_without_currency | remove: '.'}}";
+	ADT.Tag.ti = "{{ checkout.order_name | remove: '#' }}";
+	ADT.Tag.xd = "{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}";
+	ADT.Tag.cpn = "{{ discounts.first.code}}";
+</script>
+<script defer src="https://on.famme.no/jsTag?ap=1603666324"></script>
+https://fammestore.dk/jsTag?ap=1703742877
